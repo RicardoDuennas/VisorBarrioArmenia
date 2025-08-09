@@ -30,19 +30,21 @@
         transition: none; /* We handle blending manually */
     }
     #slider-container {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+        position: fixed; 
+        bottom: 30px;    
+        left: 50%;       
+        transform: translateX(-50%);
         background: rgba(0, 0, 0, 0.5);
         padding: 8px;
         border-radius: 8px;
         color: white;
         font-family: sans-serif;
-        z-index: 10;
+        z-index: 100; 
+        text-align: center;
+        min-width: 200px;
     }
     #year-label {
         margin-top: 4px;
-        text-align: center;
         font-weight: bold;
     }
 </style>
