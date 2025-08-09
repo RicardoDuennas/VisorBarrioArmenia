@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Visor de aerofotografías Barrio Armenia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <style>
@@ -156,7 +155,7 @@ viewer.addEventListener("touchmove", (e) => {
         let dist = getTouchDist(e.touches);
         let zoomFactor = dist / lastTouchDist;
         scale *= zoomFactor;
-        scale = Math.min(Math.max(1, scale), 5);
+        scale = Math.min(Math.max(1, scale), 15);
         lastTouchDist = dist;
     }
     applyTransform();
